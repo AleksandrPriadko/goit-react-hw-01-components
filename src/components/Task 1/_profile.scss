@@ -1,0 +1,83 @@
+.profile {
+  width: 250px;
+  border: 0px solid rgb(214, 214, 214);
+  border-radius: 8px;
+  box-shadow: 3px 3px 9px 0px rgba(34, 60, 80, 0.3);
+  overflow: hidden;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 150px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.name {
+  display: inline-block;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.tag {
+  display: inline-block;
+  font-family: 'Arial';
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.location {
+  display: inline-block;
+  font-family: 'Arial';
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  margin: 0px;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.stats-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(233, 233, 233);
+  border: 1px solid rgb(214, 214, 214);
+}
+.label {
+  font-family: 'Arial';
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.quantity {
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+
+  margin: 0px;
+}

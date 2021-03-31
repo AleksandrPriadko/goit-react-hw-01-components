@@ -1,14 +1,20 @@
 import React from 'react';
+import friendList from './friendList.module.scss';
+
+console.log(friendList);
 
 const FriendList = ({ friends }) => (
-  <ul class="friend-list">
-    {friends.map(friend => (
-      <li class="item" key={friend.id}>
-        <span class="status"></span>
-        <img class="avatar" src={friend.avatar} alt="User avatar" width="48" />
-        <p class="name">{friend.name}</p>
-      </li>
-    ))}
+  <ul className="friend-list">
+    {friends.map(({ id, name, isOnline, avatar }) => {
+      const colorsStat = isOnline ? friendList.statu : friendList.status;
+      return (
+        <li className="item" key={id}>
+          <span className={colorsStat}></span>
+          <img className="avatar" src={avatar} alt="User avatar" width="48" />
+          <p className="name">{name}</p>
+        </li>
+      );
+    })}
   </ul>
 );
 
