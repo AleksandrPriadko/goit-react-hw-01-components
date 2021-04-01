@@ -5,6 +5,8 @@ import Statistics from './components/Task 2/Statistics';
 import statisticalData from './statistical-data.json';
 import FriendList from './components/Task 3/FriendList';
 import friends from './friends.json';
+import TransactionHistory from './components/Task 4/TransactionHistory';
+import transactions from './transactions.json';
 import './globall.scss';
 
 //const gen = '#' + Math.random().toString(16).substring(4);
@@ -21,6 +23,7 @@ const App = () => {
       />
       <Statistics title="Upload stats" stats={statisticalData} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
